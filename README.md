@@ -4,12 +4,6 @@
 
 ---
 
-## 🌐 Live Demo
-
-👉 [**Launch BudgetBat**](https://your-live-demo-link.com)
-
----
-
 ## 🚀 Features
 
 - 🔐 **Authentication**
@@ -44,13 +38,13 @@
 
 ## 📂 Project Structure
 
-\`\`\`
-budgetbat/
+
+<pre>budgetbat/
 ├── client/           # React frontend (TypeScript)
 ├── server/           # Node.js backend (TypeScript)
 ├── appwrite/         # Appwrite configuration
 ├── README.md
-\`\`\`
+</pre>
 
 ---
 
@@ -58,26 +52,22 @@ budgetbat/
 
 ### 1. Clone the Repository
 
-\`\`\`bash
-git clone https://github.com/yourusername/budgetbat.git
-cd budgetbat
-\`\`\`
+
+<pre>git clone https://github.com/yourusername/budgetbat.git
+cd budgetbat</pre>
 
 ### 2. Setup Backend
 
-\`\`\`bash
-cd server
+<pre>cd server
 npm install
-npm run dev
-\`\`\`
+npm run dev</pre>
 
 ### 3. Setup Frontend
 
-\`\`\`bash
-cd ../client
+<pre>cd ../client
 npm install
 npm start
-\`\`\`
+</pre>
 
 ---
 
@@ -85,22 +75,20 @@ npm start
 
 ### \`.env\` (Backend)
 
-\`\`\`env
-PLAID_CLIENT_ID=your_client_id
+
+<pre>PLAID_CLIENT_ID=your_client_id
 PLAID_SECRET=your_secret
 DWOLLA_API_KEY=your_dwolla_key
 DWOLLA_API_SECRET=your_dwolla_secret
 APPWRITE_ENDPOINT=https://your-appwrite-endpoint.com
-APPWRITE_PROJECT_ID=your_project_id
-\`\`\`
+APPWRITE_PROJECT_ID=your_project_id</pre>
 
 ### \`.env\` (Frontend)
 
-\`\`\`env
-REACT_APP_API_URL=http://localhost:5000
+
+<pre>REACT_APP_API_URL=http://localhost:5000
 REACT_APP_APPWRITE_ENDPOINT=https://your-appwrite-endpoint.com
-REACT_APP_APPWRITE_PROJECT_ID=your_project_id
-\`\`\`
+REACT_APP_APPWRITE_PROJECT_ID=your_project_id</pre>
 
 ---
 
@@ -111,12 +99,6 @@ REACT_APP_APPWRITE_PROJECT_ID=your_project_id
 - Shared budgets for families or roommates
 - Recurring income/expense tracking
 - PWA support
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
