@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦇 BudgetBat
 
-## Getting Started
+**BudgetBat** is a full-stack personal finance management app built with TypeScript and modern web technologies. It helps users track expenses, link bank accounts, and manage budgets securely and efficiently. The app leverages powerful APIs like Plaid for financial data, Dwolla for transfers, and Appwrite for backend services and user authentication.
 
-First, run the development server:
+---
 
-```bash
+## 🌐 Live Demo
+
+👉 [**Launch BudgetBat**](https://your-live-demo-link.com)
+
+---
+
+## 🚀 Features
+
+- 🔐 **Authentication**
+  - Secure user signup and login with Appwrite
+- 🏦 **Bank Integration**
+  - Connect to bank accounts using Plaid
+  - Fetch real-time balances and transactions
+- 💸 **Payments and Transfers**
+  - Set up and manage ACH transfers via Dwolla
+- 📊 **Budget Management**
+  - Track expenses by category
+  - Visual breakdowns of income and spending
+- 📈 **Insights**
+  - Personalized analytics and monthly summaries
+- 💻 **Responsive Design**
+  - Mobile-friendly UI built with React and TypeScript
+
+---
+
+## 🛠 Tech Stack
+
+| Technology   | Role                                  |
+|--------------|----------------------------------------|
+| **TypeScript** | Language used throughout the stack   |
+| **React**     | Frontend framework                    |
+| **Node.js**   | Backend server                        |
+| **Appwrite**  | Authentication and database backend   |
+| **Plaid**     | Bank account linking and transaction data |
+| **Dwolla**    | ACH payments and customer onboarding  |
+
+---
+
+## 📂 Project Structure
+
+\`\`\`
+budgetbat/
+├── client/           # React frontend (TypeScript)
+├── server/           # Node.js backend (TypeScript)
+├── appwrite/         # Appwrite configuration
+├── README.md
+\`\`\`
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+\`\`\`bash
+git clone https://github.com/yourusername/budgetbat.git
+cd budgetbat
+\`\`\`
+
+### 2. Setup Backend
+
+\`\`\`bash
+cd server
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Setup Frontend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+\`\`\`bash
+cd ../client
+npm install
+npm start
+\`\`\`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+### \`.env\` (Backend)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+\`\`\`env
+PLAID_CLIENT_ID=your_client_id
+PLAID_SECRET=your_secret
+DWOLLA_API_KEY=your_dwolla_key
+DWOLLA_API_SECRET=your_dwolla_secret
+APPWRITE_ENDPOINT=https://your-appwrite-endpoint.com
+APPWRITE_PROJECT_ID=your_project_id
+\`\`\`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### \`.env\` (Frontend)
 
-## Deploy on Vercel
+\`\`\`env
+REACT_APP_API_URL=http://localhost:5000
+REACT_APP_APPWRITE_ENDPOINT=https://your-appwrite-endpoint.com
+REACT_APP_APPWRITE_PROJECT_ID=your_project_id
+\`\`\`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Future Improvements
+
+- Dark mode toggle
+- Email notifications and reminders
+- Shared budgets for families or roommates
+- Recurring income/expense tracking
+- PWA support
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+Built with care by [Your Name](https://your-portfolio-link.com)  
+[GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourusername)
